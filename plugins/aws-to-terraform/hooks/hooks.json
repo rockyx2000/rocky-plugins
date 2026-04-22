@@ -1,0 +1,27 @@
+{
+  "description": "aws-to-terraform プラグインの安全ガード。terraform apply/destroy の拒否、管理者認証情報の検出を行う。",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks-handlers/deny-terraform-write.sh\""
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks-handlers/detect-admin-credentials.sh\""
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "aws-to-terraform",
+  "version": "1.0.0",
+  "description": "既存のAWS環境をTerraformコードに自動変換し、terraform importからNo Changes状態まで到達するエージェント",
+  "author": {
+    "name": "rockyx2000",
+    "email": "rockyx2000@users.noreply.github.com"
+  },
+  "license": "MIT",
+  "keywords": ["aws", "terraform", "iac", "import", "infrastructure"]
+}

@@ -1,0 +1,4 @@
+.DS_Store
+output/scan_results/
+output/terraform/
+.claude/settings.local.json

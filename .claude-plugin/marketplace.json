@@ -1,0 +1,16 @@
+{
+  "name": "rocky-plugins",
+  "description": "AWS環境をTerraformコードに自動変換するプラグイン集",
+  "owner": {
+    "name": "rockyx2000",
+    "email": "rockyx2000@users.noreply.github.com"
+  },
+  "plugins": [
+    {
+      "name": "aws-to-terraform",
+      "description": "既存のAWS環境をスキャンしてTerraformコードを生成し、terraform importからNo Changes状態まで自動変換する",
+      "version": "1.0.0",
+      "source": "./plugins/aws-to-terraform"
+    }
+  ]
+}
